@@ -1,0 +1,74 @@
+355  git init
+  357  git status
+  358  git branch -M main
+  359  git branch
+  360  git status
+  364  git add README.md
+  367  git add .
+  368  git commit -m "initial commit"
+  369  git status
+  370  git config --list
+  371  git config --local user.name "mehulsingh010"
+  372  git config --local user.email "mehul.singh@joshsoftware.com"
+  373  git config --list
+  374  git config --local user.email mehul.singh@joshsoftware.com
+  375  git config --list
+  376  git config --local user.name
+  377  git config --local user.email
+  378  git remote add origin git@github.com:mehulsingh010/GitBasic_Assignment.git
+  379  git push -u origin main
+  380  git checkout -b feature1
+  384  git add feature11.txt feature12.txt
+  385  git commit -m "work on feature1"
+  386  git branch
+  387  git checkout -b feature2
+  388  git branch
+  391  git add feature21.txt feature22.txt
+  396  git add feature21.txt feature22.txt
+  397  git commit -m "work on feature2"
+  400  git status
+  401  git stash
+  402  git status
+  403  git add temp.txt
+  404  git status
+  405  git stash
+  407  git stash list
+  408  git stash apply
+  410  git add temp.txt
+  411  git status
+  412  git commit -m "restore temporary changes"
+  413  git log
+  414  git reset --soft HEAD~1
+  415  git log
+  418  git status
+  419  git commit -m "commit once agaain after the reset soft HEAD~1"
+  420  git log
+  421  git status
+  424  git reset --hard HEAD~1
+  426  git status
+  428  git diff main feature1
+  429  git diff
+  431  git add uncommit.txt
+  432  git diff
+  433  git branch -d feature2
+  434  git branch -D feature2
+  435  git checkout main
+  436  git branch -d feature1
+  437  git branch -D feature2
+  438  git remote -v
+  439  git push -u origin main
+  440  git branch
+  441  git checkout feature1
+  442  git status
+  443  git restore --staged uncommit.txt
+  444  git status
+  447  git push -u origin feature1
+  448  git branch
+  450  git add README.md
+  451  git commit -m "Assignment 1 all commands tried"
+  452  git push
+  453  git checkout main
+  454  git merge feature1
+  455  git branch -d feature1
+  456  git branch
+  458  history | grep git
